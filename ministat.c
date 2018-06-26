@@ -16,6 +16,10 @@
 #include <string.h>
 #include <unistd.h>
 
+#ifdef __SVR4
+#include <termios.h>
+#endif
+
 #define NSTUDENT 100
 #define NCONF 6
 double const studentpct[] = { 80, 90, 95, 98, 99, 99.5 };
